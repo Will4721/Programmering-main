@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js" integrity="sha512-lvddmeF7aHRJwdbJeYThWd5kWSjTrXBzCRF/jYROiHzmhMJ1dEXfGH5Q7ft0yhizXTopAETG03s5ajTflauijA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
-   
 </head>
 <body>
     <header>
         <h1>Reddit API</h1>
+        <div>
+            <input type="text" placeholder="indtast subreddit" id="searchInput">
+        <button id="searchButton">OK</button> 
+        </div>
     </header>
     <div class="page" id="page1">
         <div class="left">
@@ -31,6 +34,7 @@
             </div>
         </div>        
         <div class="right"></div>
+        <p>her kommer der til at være poster når du søger </p>
     </div>
 </body>
 </html>
