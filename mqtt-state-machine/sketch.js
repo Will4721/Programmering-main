@@ -2,13 +2,21 @@
 //variabler til at indsætte i HTML 
 let m5NameDiv, m5StatusDiv
 
+let colors = ['blue','green','green',]
+
+//variabeler i html
+let header, button
 //denne variabel bruges til at håndtere mqtt
 let client 
 
+
+let state
+
 function setup() {
+  createCanvas(windowWidth, windowHeight)
   //tag fat i de to HTML elementer vi vil modificere 
-  m5NameDiv = select('#m5_1 header')
-  m5StatusDiv = select('#m5_1 .status')
+ header = select('#header')
+  button = select('#button')
 
   //vi kan bruge mqtt.connect fordi vi har inkluderet mqtt.js i HTML filen
   client = mqtt.connect('wss://mqtt.nextservices.dk')
@@ -34,5 +42,23 @@ function setup() {
     //SÅ kan vi opdatere HTML dokumentet 
     m5NameDiv.html(json.id)
     m5StatusDiv.html(json.state)
+
+    state = json.state
   })
+}
+
+function draw(){
+  clear()
+if(state == 'setup'){
+  fill('orange')
+  noStroke()
+  ellipse(random(80,120),100,50)
+  text('setup - wating for something',100,80)
+}
+if(state == 'setup'){
+  fill('orange')
+  noStroke()
+  ellipse(random(width/2-20,width/2+20),100,50)
+  text('setup - wating for something',100,80)
+}
 }
