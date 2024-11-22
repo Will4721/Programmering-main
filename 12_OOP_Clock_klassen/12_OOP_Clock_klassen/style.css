@@ -1,0 +1,102 @@
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Styling */
+.page {
+    position: fixed;
+    top: 0;
+    left: -100vw; /* Hide initially */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    transition: 0.3s 0.3s all ease-in-out;
+}
+
+/* Visible Page State */
+.visible {
+    left: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+/* Time Clock Styling */
+.time {
+    font-family: Arial, sans-serif;
+    font-size: 6rem;
+    height: 11rem;
+    width: 11rem;
+    border: 1px dotted hotpink;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* Page-Specific Background Colors */
+#page1 {
+    background-color: lightskyblue;
+}
+
+#page2 {
+    background-color: lightgreen;
+}
+
+#page3 {
+    background-color: lightcyan;
+}
+
+#page4 {
+    background-color: lightseagreen;
+}
+
+/* Headings */
+h1 {
+    font-family: Raleway, sans-serif;
+    color: hotpink;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Search Bar Container */
+#search-container {
+    position: relative;
+    z-index: 2; /* Ensure it stays above pages */
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Input and Button Styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: hotpink;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: deeppink;
+}
+
+/* Clock Container */
+#clock {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    display: grid;
+    place-items: center
+}
