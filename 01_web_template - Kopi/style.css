@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.page{
+    position:fixed;
+    top:0;
+    left:-100vw;
+    width:100vw;
+    height: 100vh;
+    overflow:hidden;
+    display:grid;
+    place-items:center;
+    transition: 0.3s 0.3s all ease-in-out;
+}
+
+.visible{
+    left:0;
+    transition: 0.3s all ease-in-out;
+}
+
+#page1{
+    background-color: lightskyblue;
+    #quiz-container {
+        display: inline-block;
+        text-align: left;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #e0e0e0;
+      }
+      
+      button.correct {
+        background-color: #c8e6c9;
+      }
+      
+      button.incorrect {
+        background-color: #ffcdd2;
+      }
+      
+}
+
+#page2{
+    background-color: lightgreen;
+    #quiz-container {
+        display: inline-block;
+        text-align: left;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #e0e0e0;
+      }
+      
+      button.correct {
+        background-color: #c8e6c9;
+      }
+      
+      button.incorrect {
+        background-color: #ffcdd2;
+      }
+      
+}
+#page3{
+    background-color: lightcyan;
+    #quiz-container {
+        display: inline-block;
+        text-align: left;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #e0e0e0;
+      }
+      
+      button.correct {
+        background-color: #c8e6c9;
+      }
+      
+      button.incorrect {
+        background-color: #ffcdd2;
+      }
+      
+}
+#page4{
+    background-color: lightseagreen;
+    #quiz-container {
+        display: inline-block;
+        text-align: left;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #e0e0e0;
+      }
+      
+      button.correct {
+        background-color: #c8e6c9;
+      }
+      
+      button.incorrect {
+        background-color: #ffcdd2;
+      }
+      
+}
+
+#page5{
+    background-color: rgb(178, 32, 32);
+    #quiz-container {
+        display: inline-block;
+        text-align: left;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #e0e0e0;
+      }
+      
+      button.correct {
+        background-color: #c8e6c9;
+      }
+      
+      button.incorrect {
+        background-color: #ffcdd2;
+      }
+      
+}
+
+#page6{
+    background-color: rgb(178, 171, 32);
+    #quiz-container {
+        display: inline-block;
+        text-align: left;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #e0e0e0;
+      }
+      
+      button.correct {
+        background-color: #c8e6c9;
+      }
+      
+      button.incorrect {
+        background-color: #ffcdd2;
+      }
+      
+}
+
+h1{
+    font-family: Raleway;
+    color:hotpink;
+}
+
+
